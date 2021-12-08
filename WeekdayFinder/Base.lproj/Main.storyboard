@@ -11,19 +11,19 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Wee_kdayFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeekdayFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekday Finder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpT-Sf-aMw">
-                                <rect key="frame" x="111.5" y="122" width="191.5" height="51.5"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="32"/>
+                                <rect key="frame" x="92" y="122" width="230.5" height="44"/>
+                                <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Lp2-1W-I3E">
-                                <rect key="frame" x="16" y="245.5" width="382" height="122"/>
+                                <rect key="frame" x="16" y="238" width="382" height="122"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8Fo-5u-KVb">
                                         <rect key="frame" x="0.0" y="0.0" width="49" height="122"/>
@@ -73,8 +73,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В какой день Юле пукнули в нос" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfW-8D-xne">
-                                <rect key="frame" x="116" y="390" width="182" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfW-8D-xne">
+                                <rect key="frame" x="116" y="382.5" width="182" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="182" id="Jgv-bP-E0d"/>
                                     <constraint firstAttribute="height" constant="47" id="zEi-bl-qet"/>
@@ -84,7 +84,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8q-23-2mg">
-                                <rect key="frame" x="155.5" y="464" width="103" height="31"/>
+                                <rect key="frame" x="155.5" y="456.5" width="103" height="31"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="103" id="GZK-eN-hp3"/>
@@ -114,6 +114,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="button" destination="W8q-23-2mg" id="CBO-xq-SSY"/>
                         <outlet property="dateTF" destination="l2x-kw-kUy" id="Rp9-2Q-8yt"/>
                         <outlet property="monthTF" destination="xFJ-8Z-XJD" id="s6F-To-gc9"/>
                         <outlet property="resultLabel" destination="PfW-8D-xne" id="p9d-cy-TVZ"/>

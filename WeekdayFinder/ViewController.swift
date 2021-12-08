@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     @IBOutlet var resultLabel: UILabel!
     
+    @IBOutlet var button: UIButton!
+    
     @IBAction func findDay(_ sender: Any) {
         
         let calendar = Calendar.current
@@ -37,6 +39,19 @@ class ViewController: UIViewController {
         resultLabel.text = capitalizedWeekday
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        button.layer.cornerRadius = 15
+        button.backgroundColor = .systemBlue
+        button.titleLabel?.textColor = .black
+        
+        dateTF.placeholder = "Введите дату"
+        monthTF.placeholder = "Введите число месяца"
+        yearTF.placeholder = "Введите год"
+        
+        view.backgroundColor = .orange
+    }
     
 }
 
